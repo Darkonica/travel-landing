@@ -1,0 +1,41 @@
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+
+  .wrapper_small {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header__logo {
+    width: 82px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+nav {
+
+  .nav__menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  .nav__link {
+    display: inline-block;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      display: block;
+    }
+  }
+}
