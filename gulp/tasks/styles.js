@@ -4,7 +4,11 @@ module.exports = function() {
       .src(['./src/styles/**/styles.scss', '!./src/vendor/**/*.css'])
       .pipe($.plumber())
       .pipe($.sourcemaps.init())
-      .pipe($.sass())
+      .pipe(
+        $.sass({
+          includePaths: ['node_modules'],
+        })
+      )
       .pipe($.autoprefixer({ grid: true, browsers: ['last 12 versions', '> 1%'] }))
       .pipe($.mincss({ compatibility: 'ie8', level: { 1: { specialComments: 0 } } }))
       .pipe($.rename({ suffix: '.min' }))
