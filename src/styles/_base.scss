@@ -4,8 +4,12 @@
 
 @import './partials/sprite';
 
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font: 16px 'Roboto', sans-serif;
+  font: 16px 'Lato', sans-serif;
   line-height: 1.2;
 }
 
@@ -16,6 +20,22 @@ h4,
 p {
   padding: 0;
   margin: 0;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-weight: 500;
+  line-height: 42px;
+  font-size: 35px;
+}
+
+h4 {
+  font-weight: 500;
+  line-height: 24px;
+  font-size: 18px;
 }
 
 .wrapper {

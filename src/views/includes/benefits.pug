@@ -1,3 +1,28 @@
-.benefits
+mixin benefits__item(imglink, subtitle, text)
+  .benefits__item
+    img(src=imglink, alt="").benefits__icon
+    h4.benefits__subtitle= subtitle
+    .benefits__text= text
+
+    a(href="#").benefits__link Learn more
+
+
+.benefits.shadow-cont.wrapper
   h2.benefits__title Benefits of Odigo
-    
+
+  .benefits__block
+    +benefits__item(
+      'img/icons/icon-welcome.svg',
+      'Welcome to Odigo!',
+      "Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.")
+
+    +benefits__item(
+      'img/icons/icon-welcome.svg',
+      'Welcome to Odigo!',
+      "Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.")
+
+    +benefits__item(
+      'img/icons/icon-welcome.svg',
+      'Welcome to Odigo!',
+      "Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.")
+  

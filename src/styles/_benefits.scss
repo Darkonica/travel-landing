@@ -1,0 +1,38 @@
+.benefits {
+
+  &__block {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 70px;
+    margin-top: 120px;
+  }
+
+  &__icon {
+    margin-bottom: 38px;
+  }
+
+  &__subtitle {
+    margin-bottom: 27px;
+  }
+
+  &__text {
+    margin-bottom: 39px;
+  }
+
+  &__link {
+    color: #006dfe;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    &:after {
+      content: '';
+      display: inline-block;
+      width: 33px;
+      height: 10px;
+      margin-left: 25px;
+      background-image: url('/img/icons/arrow-right.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+}
