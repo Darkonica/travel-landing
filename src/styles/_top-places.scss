@@ -1,0 +1,28 @@
+.top-places {
+
+  &__block {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 4.5%;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__img-cont {
+    margin-bottom: 48px;
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  &__text {
+    margin-bottom: 48px;
+  }
+}

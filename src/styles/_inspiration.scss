@@ -1,23 +1,5 @@
 .inspiration {
 
-  &__header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 36px;
-  }
-
-  &__title {
-
-    &:after {
-      content: '';
-      display: block;
-      width: 55%;
-      margin-top: 5px;
-      border-bottom: 2px solid #006dfe;
-    }
-  }
-
   &__block {
     display: flex;
     justify-content: space-between;
