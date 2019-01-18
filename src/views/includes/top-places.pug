@@ -1,34 +1,52 @@
+mixin top-places__item(img, text, link="#")
+  .top-places__item
+    .top-places__img-cont
+      img(src=img, alt="").top-places__image
+
+    .top-places__text= text
+
+    .button-cont
+      a(href=link).button See more
+
+
+
 .top-places.content__block.wrapper
   .content__header
     h2.content__title_underlined Today top places to visit
 
   .top-places__block
-    .top-places__item
-      .top-places__img-cont
-        img(src="/img/kyoto.jpg", alt="").top-places__image
+    +top-places__item(
+      "/img/kyoto.jpg",
+      `Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.`,
+      "#"
+      )
 
-      .top-places__text.
-        Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.
+    +top-places__item(
+      "/img/kyoto.jpg",
+      `Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.`,
+      "#"
+      )
 
-      .button-cont
-        a(href="#").button See more
+    +top-places__item(
+      "/img/kyoto.jpg",
+      `Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.`,
+      "#"
+      )
 
-    .top-places__item
-      .top-places__img-cont
-        img(src="/img/kyoto.jpg", alt="").top-places__image
+    +top-places__item(
+      "/img/kyoto.jpg",
+      `Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.`,
+      "#"
+      )
 
-      .top-places__text.
-        Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this. Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.
+    +top-places__item(
+      "/img/kyoto.jpg",
+      `Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.`,
+      "#"
+      )
 
-      .button-cont
-        a(href="#").button See more
-
-    .top-places__item
-      .top-places__img-cont
-        img(src="/img/kyoto.jpg", alt="").top-places__image
-
-      .top-places__text.
-        Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.
-
-      .button-cont
-        a(href="#").button See more
+    +top-places__item(
+      "/img/kyoto.jpg",
+      `Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.`,
+      "#"
+      )

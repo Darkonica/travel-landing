@@ -1,9 +1,3 @@
-@import './partials/normalize';
-
-@import './partials/variables';
-
-@import './partials/sprite';
-
 * {
   box-sizing: border-box;
 }
@@ -80,18 +74,19 @@ h4 {
         display: block;
         width: 55%;
         margin-top: 5px;
-        border-bottom: 2px solid #006dfe;
+        border-bottom: 2px solid $main-color;
       }
     }
   }
 }
 
 .button {
+  display: inline-block;
   font-size: 16px;
   font-weight: 500;
   text-transform: uppercase;
   text-decoration: none;
-  background-color: #1b7dff;
+  background-color: $main-color;
   color: #fff;
   border: none;
   padding: 12px 20px;
@@ -99,7 +94,7 @@ h4 {
 }
 
 .link-arrow {
-  color: #006dfe;
+  color: $main-color;
   text-transform: uppercase;
   text-decoration: none;
 
