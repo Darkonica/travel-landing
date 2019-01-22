@@ -3,7 +3,7 @@
   &__block {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 4.5%;
+    grid-gap: 3vw;
   }
 
   &__item {
@@ -13,13 +13,28 @@
   }
 
   &__img-cont {
+    position: relative;
     margin-bottom: 48px;
   }
 
-  &__image {
+  &__title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
     width: 100%;
-    height: auto;
-    display: block;
+    height: 50px;
+    content: '';
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-weight: 500;
+    line-height: 50px;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding-left: 25px;
+  }
+
+  &__image {
+    padding-bottom: 100%;
   }
 
   &__text {

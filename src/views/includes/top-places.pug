@@ -1,7 +1,8 @@
-mixin top-places__item(img, text, link="#")
+mixin top-places__item(title="123", img, text, link="#")
   .top-places__item
     .top-places__img-cont
-      img(src=img, alt="").top-places__image
+      .top-places__image(style={'background-image': `url('${img}')`, 'background-size': 'cover', 'background-position': '50% 50%'})
+      .top-places__title= title
 
     .top-places__text= text
 
@@ -16,37 +17,43 @@ mixin top-places__item(img, text, link="#")
 
   .top-places__block
     +top-places__item(
-      "/img/kyoto.jpg",
+      "Nagoya",
+      "/img/articles/nagoya.jpg",
       `Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.`,
       "#"
       )
 
     +top-places__item(
-      "/img/kyoto.jpg",
+      "Niigata",
+      "/img/articles/niigata.jpg",
       `Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.`,
       "#"
       )
 
     +top-places__item(
-      "/img/kyoto.jpg",
+      "Osaka",
+      "/img/articles/osaka.jpg",
       `Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.`,
       "#"
       )
 
     +top-places__item(
-      "/img/kyoto.jpg",
+      "Saitama",
+      "/img/articles/saitama.jpg",
       `Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.`,
       "#"
       )
 
     +top-places__item(
-      "/img/kyoto.jpg",
+      "Ueno",
+      "/img/articles/ueno.jpg",
       `Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.`,
       "#"
       )
 
     +top-places__item(
-      "/img/kyoto.jpg",
+      "Shibuya",
+      "/img/articles/shibuya.jpg",
       `Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.`,
       "#"
       )
