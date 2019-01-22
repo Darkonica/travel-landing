@@ -15,15 +15,15 @@ document.querySelectorAll('.custom-select').forEach(oldSelect => {
   // Add new custom select
   let selectStyled = document.createElement('div');
   selectStyled.classList.add('select-styled');
-  selectStyled.innerHTML = oldSelect.children[0].innerHTML;
+  selectStyled.innerHTML = oldSelect.children[0].innerHTML; // placeholder
   wrapper.appendChild(selectStyled);
 
-  // Add list of options
+  // Add options container
   let optionsStyled = document.createElement('ul');
   optionsStyled.classList.add('select-options');
 
-  // options to li tags
-  for (let i = 0; i < oldSelect.children.length; i++) {
+  // options to li tags, without first one (placeholder)
+  for (let i = 1; i < oldSelect.children.length; i++) {
     let li = document.createElement('li');
     li.setAttribute('rel', oldSelect.children[i].value);
     li.innerHTML = oldSelect.children[i].innerHTML;
