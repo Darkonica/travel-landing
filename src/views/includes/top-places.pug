@@ -1,4 +1,4 @@
-mixin top-places__item(title="123", img, text, link="#")
+mixin top-places__item(title, img, text, link="#")
   .top-places__item
     .top-places__img-cont
       .top-places__image(style={'background-image': `url('${img}')`, 'background-size': 'cover', 'background-position': '50% 50%'})
@@ -6,7 +6,7 @@ mixin top-places__item(title="123", img, text, link="#")
 
     .top-places__text= text
 
-    .button-cont
+    .button-cont.top-places__button-cont
       a(href=link).button See more
 
 
@@ -19,41 +19,41 @@ mixin top-places__item(title="123", img, text, link="#")
     +top-places__item(
       "Nagoya",
       "/img/articles/nagoya.jpg",
-      `Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.`,
+      `Nagoya lies north of Ise Bay on the Nōbi Plain. The city was built on low-level plateaus to ward off floodwaters. The plain is one of the nation's most fertile areas.`,
       "#"
       )
 
     +top-places__item(
       "Niigata",
       "/img/articles/niigata.jpg",
-      `Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.`,
+      `Just over an hour from Tokyo by bullet train, Niigata is a natural delight, from the popular ski resorts of Echigo-Yuzawa to the terraced rice paddies of Hoshitoge. Seafood, rice and sake are local specialties.`,
       "#"
       )
 
     +top-places__item(
       "Osaka",
       "/img/articles/osaka.jpg",
-      `Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.`,
+      `Osaka (大阪, Ōsaka) is Japan's second largest metropolitan area after Tokyo. It has been the economic powerhouse of the Kansai Region for many centuries. Osaka was formerly known as Naniwa.`,
       "#"
       )
 
     +top-places__item(
       "Saitama",
       "/img/articles/saitama.jpg",
-      `Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.`,
+      `Saitama (さいたま) is a major city within half an hour by train north of Tokyo. The city was newly formed in 2001 with the merger of Urawa, Omiya and other municipalities.`,
       "#"
       )
 
     +top-places__item(
       "Ueno",
       "/img/articles/ueno.jpg",
-      `Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.`,
+      `With so many famous and fabulous places to visit in Tokyo, the Ueno area is sometimes overlooked. But with Ameyoko , Ueno Park  and a multitude of art galleries and museums, Ueno deserves some space in your Tokyo itinerary.`,
       "#"
       )
 
     +top-places__item(
       "Shibuya",
       "/img/articles/shibuya.jpg",
-      `Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.`,
+      `Shibuya (渋谷) is one of the twenty-three city wards of Tokyo, but often refers to just the popular shopping and entertainment area found around Shibuya Station.`,
       "#"
       )
