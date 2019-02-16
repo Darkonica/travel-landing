@@ -1,7 +1,12 @@
 .first-screen {
   width: 100%;
-  min-height: 100vh;
+  // min-height: 100vh;
+  min-height: 750px;
+  height: 100vh;
   color: #fff;
+  margin-bottom: -210px;
+  padding-right: 40px;
+  padding-left: 40px;
   background: linear-gradient(180deg, rgba(53, 66, 103, 0.0001) 0%, #151824 95.04%),
     url('/img/first-screen.jpg');
   background-size: cover;
