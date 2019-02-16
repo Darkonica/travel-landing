@@ -1,3 +1,15 @@
+let hamburger = document.querySelector('.hamburger');
+
+hamburger.addEventListener('click', hamburgerToggle);
+
+function hamburgerToggle() {
+  this.classList.toggle('is-active');
+  let header = document.querySelector('.header');
+  let nav = document.querySelector('.header .nav').cloneNode(deep);
+
+  header.appendChild(nav);
+}
+
 function toggle(el, className) {
   el.classList.contains(className) ? el.classList.remove(className) : el.classList.add(className);
 }
