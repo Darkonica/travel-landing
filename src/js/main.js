@@ -4,10 +4,7 @@ hamburger.addEventListener('click', hamburgerToggle);
 
 function hamburgerToggle() {
   this.classList.toggle('is-active');
-  let header = document.querySelector('.header');
-  let nav = document.querySelector('.header .nav').cloneNode(deep);
-
-  header.appendChild(nav);
+  document.querySelector('.mobile-nav').classList.toggle('is-active');
 }
 
 function toggle(el, className) {

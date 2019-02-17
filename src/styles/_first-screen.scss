@@ -13,6 +13,11 @@
   align-items: center;
   justify-content: center;
 
+  @include breakpoint(450px) {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
   &__inner-block {
     padding-bottom: 100px;
   }
@@ -36,19 +41,6 @@
     justify-content: space-between;
     max-width: 860px;
   }
-
-  // &__select {
-  //   max-width: 280px;
-  //   width: 100%;
-  //   font-family: 'Lato', sans-serif;
-  //   font-size: 18px;
-  //   color: #fff;
-  //   padding: 15px 25px;
-  //   background-color: transparent;
-  //   border: none;
-  //   border-bottom: 2px solid #bfc0c5;
-  //   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  // }
 
   &__button {
     font-size: 24px;
