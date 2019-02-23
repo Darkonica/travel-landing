@@ -7,7 +7,6 @@
 .select {
   position: relative;
   cursor: pointer;
-  display: inline-block;
   max-width: 280px;
   width: 100%;
 }
@@ -23,7 +22,7 @@
   text-overflow: ellipsis;
   font-size: 18px;
   color: #fff;
-  padding: 18px 35px 18px 25px;
+  padding: 13px 35px 18px 25px;
   background-color: transparent;
   border: none;
   border-bottom: 2px solid #bfc0c5;
@@ -32,7 +31,7 @@
 
   &:after {
     position: absolute;
-    top: 50%;
+    top: calc(45%);
     right: 10px;
     content: '';
     width: 0;
@@ -45,7 +44,7 @@
   &.active {
 
     &:after {
-      top: calc(50% - 7px);
+      top: calc(45% - 7px);
       border-color: transparent transparent #fff transparent;
     }
   }
@@ -72,10 +71,10 @@
     padding: 12px 25px;
     transition: all 0.15s ease-in;
     opacity: 0.8;
-    background-color: rgba(#efefef, 0.6);
+    background-color: #efefef;
 
     &:hover {
-      color: #fff;
+      // color: #fff;
       opacity: 1;
     }
 
