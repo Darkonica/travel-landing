@@ -1,15 +1,56 @@
 .benefits {
 
+  &__shadow-cont {
+    background-color: #fff;
+    box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
+    padding-top: 90px;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-bottom: 110px;
+
+    @include breakpoint(1000px) {
+      padding-top: 50px;
+      padding-right: 50px;
+      padding-bottom: 50px;
+      padding-left: 50px;
+    }
+
+    @include breakpoint(800px) {
+      padding-top: 0px;
+      padding-right: 0px;
+      padding-bottom: 0px;
+      padding-left: 0px;
+      box-shadow: none;
+      text-align: center;
+    }
+  }
+
   &__block {
-    display: inline-grid;
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 70px;
+    grid-gap: 70px;
     margin-top: 120px;
+
+    @include breakpoint(1000px) {
+      margin-top: 60px;
+    }
+
+    @include breakpoint(800px) {
+      grid-template-columns: minmax(auto, 400px);
+      align-items: center;
+      justify-content: center; /* adjusted */
+    }
   }
 
   &__icon-cont {
     width: 64px;
     margin-bottom: 38px;
+
+    @include breakpoint(800px) {
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 10px;
+    }
   }
 
   &__icon {
@@ -24,14 +65,9 @@
     line-height: 24px;
     font-size: 16px;
     margin-bottom: 39px;
-  }
-}
 
-.shadow-cont {
-  background-color: #fff;
-  box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
-  padding-top: 90px;
-  padding-right: 100px;
-  padding-left: 100px;
-  padding-bottom: 110px;
+    @include breakpoint(800px) {
+      margin-bottom: 27px;
+    }
+  }
 }

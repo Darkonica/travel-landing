@@ -8,22 +8,23 @@ mixin benefits__item(imglink, subtitle, text)
     a(href="#").benefits__link.link-arrow Learn more
 
 
-.benefits.shadow-cont.wrapper.content__block
-  h2.benefits__title Benefits of Odigo
+.benefits.wrapper.content__block
+  .benefits__shadow-cont
+    h2.benefits__title Benefits of Odigo
 
-  .benefits__block
-    +benefits__item(
-      'img/icons/icon-welcome.svg',
-      'Welcome to Odigo!',
-      "The northernmost zone, Hokkaido, has a humid continental climate with long, cold winters and very warm to cool summers.")
+    .benefits__block
+      +benefits__item(
+        'img/icons/icon-welcome.svg',
+        'Welcome to Odigo!',
+        "The northernmost zone, Hokkaido, has a humid continental climate with long, cold winters and very warm to cool summers.")
 
-    +benefits__item(
-      'img/icons/icon-personal.svg',
-      'Your Personal Japan Guide',
-      "Precipitation is not heavy, but the islands usually develop deep snowbanks in the winter.")
+      +benefits__item(
+        'img/icons/icon-personal.svg',
+        'Your Personal Japan Guide',
+        "Precipitation is not heavy, but the islands usually develop deep snowbanks in the winter.")
 
-    +benefits__item(
-      'img/icons/icon-local.svg',
-      'Promoting Local Businesses',
-      "Japan ranks 20th in the 2018 Environmental Performance Index, which measures a nation's commitment to environmental sustainability.")
-  
+      +benefits__item(
+        'img/icons/icon-local.svg',
+        'Promoting Local Businesses',
+        "Japan ranks 20th in the 2018 Environmental Performance Index, which measures a nation's commitment to environmental sustainability.")
+    

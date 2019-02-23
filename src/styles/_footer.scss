@@ -5,13 +5,55 @@
   padding-top: 115px;
   padding-bottom: 115px;
 
+  @include block-paddings(desktop);
+
+  @include breakpoint(800px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @include breakpoint(450px) {
+
+    @include block-paddings(mobile);
+  }
+
   &__wrapper_small {
     display: flex;
     justify-content: space-between;
+
+    @include breakpoint(800px) {
+      flex-direction: column;
+    }
   }
 
   &__logo {
-    flex-basis: 35%;
+
+    @include breakpoint(800px) {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__links-cont {
+    flex-basis: 55%;
+    display: flex;
+    justify-content: space-between;
+
+    @include breakpoint(550px) {
+      flex-direction: column;
+    }
+  }
+
+  &__links-block {
+
+    @include breakpoint(550px) {
+      margin-bottom: 30px;
+      text-align: center;
+
+      &:last-of-type {
+        margin-bottom: 0px;
+      }
+    }
   }
 
   &__links {
@@ -22,7 +64,8 @@
 
   &__title {
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
+    color: #efefef;
   }
 
   &__link {

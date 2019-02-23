@@ -1,8 +1,8 @@
 module.exports = function() {
   $.gulp.task('watch', function() {
     return new Promise((res, rej) => {
-      $.watch(['./src/views/**/*.pug', '!./src/views/blocks/*.pug'], $.gulp.series('pug'))
-      $.watch('./src/styles/*.scss', $.gulp.series('styles'))
+      $.watch(['./src/views/**/*.pug', '!./src/views/blocks/*.pug'], $.gulp.series('pug'));
+      $.watch('./src/styles/*.scss', './src/styles/*/*.scss', $.gulp.series('styles'));
       $.watch(
         [
           './src/img/**/*.{jpg,jpeg,png,gif}',
@@ -10,9 +10,9 @@ module.exports = function() {
           '!./src/img/favicons/*.{jpg,jpeg,png,gif}',
         ],
         $.gulp.series('images')
-      )
-      $.watch('./src/js/**/*.js', $.gulp.series('scripts'))
-      res()
-    })
-  })
-}
+      );
+      $.watch('./src/js/**/*.js', $.gulp.series('scripts'));
+      res();
+    });
+  });
+};

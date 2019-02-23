@@ -1,5 +1,25 @@
 .inspiration {
 
+  &__link {
+    flex-basis: 150px;
+    flex-shrink: 0;
+    text-align: right;
+
+    @include breakpoint(500px) {
+      display: none;
+    }
+
+    &_mobile {
+      display: none;
+      text-align: center;
+      margin-top: 30px;
+
+      @include breakpoint(500px) {
+        display: block;
+      }
+    }
+  }
+
   &__block {
     display: flex;
     justify-content: space-between;
@@ -13,6 +33,23 @@
     margin-bottom: 10px;
     overflow: hidden;
     box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15);
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      transform: translateY(-10px);
+    }
+
+    @include breakpoint(900px) {
+      height: 300px;
+    }
+
+    @include breakpoint(800px) {
+      height: 250px;
+    }
+
+    @include breakpoint(650px) {
+      height: 200px;
+    }
 
     &:after {
       position: absolute;
@@ -27,11 +64,33 @@
 
     &_big {
       width: calc(50% - 5px);
+
+      @include breakpoint(650px) {
+        width: 100%;
+      }
     }
 
     &_small {
       width: calc(33.3333% - 6px);
       height: 280px;
+      margin-bottom: 0px;
+
+      @include breakpoint(900px) {
+        height: 240px;
+      }
+
+      @include breakpoint(800px) {
+        height: 200px;
+      }
+
+      @include breakpoint(650px) {
+        width: 100%;
+        margin-bottom: 10px;
+
+        &:last-of-type {
+          margin-bottom: 0px;
+        }
+      }
     }
 
     &_mount-fuji {
@@ -70,8 +129,15 @@
     bottom: 5%;
     left: 5%;
     font-weight: bold;
-    line-height: 60px;
     font-size: 50px;
     z-index: 2;
+
+    @include breakpoint(900px) {
+      font-size: 36px;
+    }
+
+    @include breakpoint(800px) {
+      font-size: 28px;
+    }
   }
 }
