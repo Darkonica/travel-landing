@@ -70,12 +70,8 @@
     margin: 0;
     padding: 12px 25px;
     transition: all 0.15s ease-in;
-    opacity: 0.8;
+    opacity: 1;
     background-color: #efefef;
-
-    &:hover {
-      opacity: 1;
-    }
 
     &[rel='hide'] {
       display: none;
